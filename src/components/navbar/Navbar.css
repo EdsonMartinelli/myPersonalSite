@@ -1,0 +1,7 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: blueviolet;
+    align-items: center;
+}
