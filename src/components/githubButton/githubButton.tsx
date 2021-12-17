@@ -1,11 +1,10 @@
 import React from 'react';
-import githubIcon from "../../assets/github-icon.svg"
+import { GithubIcon } from './styleGithub';
+import { navbarButtonProps as Props } from '../../interfaces/navbarButtons';
 
-const GithubButton: React.FC = () => {
+const GithubButton: React.FC<Props> = (props) => {
     return (
-        <>
-            <img src={githubIcon} />
-        </>
+        <GithubIcon color={props.color}/>
     )
 }
 

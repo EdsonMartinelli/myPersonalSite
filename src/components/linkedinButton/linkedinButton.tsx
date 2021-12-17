@@ -1,12 +1,10 @@
 import React from 'react';
-import linkedinIcon from "../../assets/linkedin-icon.svg"
-import "./linkedinButton.css"
+import { LinkedinIcon } from "./styleLinkedin";
+import { navbarButtonProps as Props } from '../../interfaces/navbarButtons';
 
-const LinkedinButton: React.FC = () => {
+const LinkedinButton: React.FC<Props> = ({color, url}) => {
     return (
-        <>
-            <img className="img-linkedin" src={linkedinIcon} />
-        </>
+        <LinkedinIcon color={color}/>
     )
 }
 

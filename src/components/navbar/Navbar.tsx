@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
     return (
         <nav>
             <NameButton />
-            <GithubButton />
-            <LinkedinButton />
+            <GithubButton color="#fff" url="google.com"/>
+            <LinkedinButton color="#fff" url="google.com"/>
         </nav>
     )
 }
