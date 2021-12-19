@@ -20,8 +20,8 @@ const App : React.FC = () => {
 
   return (
     <ThemeProvider theme={ theme }>
-      <Navbar darkTheme={ changeForDarkTheme} lightTheme ={changeForLightTheme}/>
-      <Intro />
+        <Navbar darkTheme={ changeForDarkTheme} lightTheme ={changeForLightTheme}/>
+        <Intro />
     </ThemeProvider>
   );
 }

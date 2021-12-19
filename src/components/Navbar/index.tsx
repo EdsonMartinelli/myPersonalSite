@@ -32,7 +32,6 @@ const Navbar: React.FC <changeThemeButton> = ({darkTheme, lightTheme}) => {
                 </ButtonWithBorder>
             </ButtonGroupStyle>
         </NavbarStyle>
-           
     )
 }
 
