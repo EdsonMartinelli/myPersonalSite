@@ -1,5 +1,4 @@
 export const dark = {
-    navbarColor: "with",
-    navbarIconsColor: "black",
-    bodyColor: "black",
+    navbarColor: "black",
+    navbarIconsColor: "white",
 }
