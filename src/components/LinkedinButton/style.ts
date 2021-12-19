@@ -1,5 +1,4 @@
 import styled from "styled-components"
-
 import { ReactComponent as Icon } from "../../assets/linkedin-icon.svg"
 
 export const LinkedinIcon = styled(Icon)<{color: string}>`
