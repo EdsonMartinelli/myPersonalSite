@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import NameButton from '../NameButton/nameButton';
-import { NavbarStyle, ButtonGroupStyle, ButtonWithoutBorder, ButtonWithBorder} from './styles';
+import { NavbarStyle, ButtonGroupStyle, ButtonWithoutBorder, ButtonWithBorder, NameLogo} from './styles';
 import { ReactComponent as IconGithub } from "../../assets/github-icon.svg"
 import { ReactComponent as IconLinkedin } from "../../assets/linkedin-icon.svg"
 import { ReactComponent as IconMoon } from "../../assets/moon-icon.svg"
@@ -16,7 +15,7 @@ const Navbar: React.FC <changeThemeButton> = ({darkTheme, lightTheme}) => {
     const {navbarColor, navbarIconsColor}= useContext(ThemeContext)
     return (
         <NavbarStyle color={navbarColor}>
-            <NameButton />
+            <NameLogo color={navbarIconsColor}> Edson Martinelli </NameLogo>
 
             <ButtonGroupStyle>
                 <ButtonWithBorder onClick={ () => lightTheme() } color={navbarIconsColor}>

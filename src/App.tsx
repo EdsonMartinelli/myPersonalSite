@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import Navbar from './components/Navbar/index';
+import Intro from './components/Intro';
 
 import { dark } from "./themes/dark"
 import { light } from "./themes/light"
@@ -20,9 +21,7 @@ const App : React.FC = () => {
   return (
     <ThemeProvider theme={ theme }>
       <Navbar darkTheme={ changeForDarkTheme} lightTheme ={changeForLightTheme}/>
-      <div className="App">
-        Teste
-      </div>
+      <Intro />
     </ThemeProvider>
   );
 }

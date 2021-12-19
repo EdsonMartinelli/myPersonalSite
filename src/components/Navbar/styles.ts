@@ -5,12 +5,14 @@ export const NavbarStyle = styled.nav<{color : string}>`
     flex-direction: row;
     width: 100%;
     height: 100px;
-    background-color: ${props => props.color};
+    background-color: transparent;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;
     box-sizing: border-box;
-    transition: background-color 0.5s ease-out;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
 `
 
 export const ButtonGroupStyle = styled.div`
@@ -36,4 +38,8 @@ export const ButtonWithBorder = styled(ButtonWithoutBorder)<{color: string}>`
         border: 2px solid ${props => props.color};
         border-radius: 5px;
     }
+`
+
+export const NameLogo = styled.div<{color: string}>`
+    color: ${props => props.color}
 `
