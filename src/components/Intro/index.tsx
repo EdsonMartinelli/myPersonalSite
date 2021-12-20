@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import { Layout, Background } from './style';
+import { BackgroundLayer0, BackgroundLayer1} from './style';
 
 interface PageLoad{
     isPageload: boolean
@@ -10,8 +10,8 @@ const Intro: React.FC <PageLoad> = ({isPageload}) => {
     const {navbarColor, animationType}= useContext(ThemeContext)
     return (
         <>
-            <Background color={navbarColor} />
-            <Layout color={ navbarColor } type={ animationType } isPageload={ isPageload }/>
+            <BackgroundLayer0 color={ navbarColor }/>
+            <BackgroundLayer1 color={ navbarColor } type={ animationType } isPageload={ isPageload }/>
         </>
     )
 }

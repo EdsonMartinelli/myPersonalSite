@@ -13,13 +13,13 @@ const App : React.FC = () => {
 
   function changeForDarkTheme(): void {
     if(isPageload && theme === light) setIsPageload(false)
-    if (theme === light) setTheme(dark)
+    if(theme === light) setTheme(dark)
 
   }
 
   function changeForLightTheme(): void {
     if(isPageload && theme === dark) setIsPageload(false)
-    if (theme === dark) setTheme(light)
+    if(theme === dark) setTheme(light)
   }
 
   return (

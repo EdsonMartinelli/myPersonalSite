@@ -22,7 +22,7 @@ const rightToLeft = keyframes`
     }
 `
 
-export const Layout = styled.nav<{color: string, type: string, isPageload: boolean}>`
+export const BackgroundLayer1 = styled.nav<{color: string, type: string, isPageload: boolean}>`
     position: absolute;
     width: 100%;
     height: 100%;
@@ -30,16 +30,17 @@ export const Layout = styled.nav<{color: string, type: string, isPageload: boole
     box-sizing: border-box;
     z-index: -1;
     ${props =>  props.isPageload === false && css`
-        animation: ${props.type === "leftToRight"? leftToRight : rightToLeft} 1s ease
+        animation: ${props.type === "leftToRight"? leftToRight : rightToLeft} 1s ease;
     `
     }
 `
 
-export const Background = styled.nav<{color : string}>`
+export const BackgroundLayer0 = styled.nav<{color : string}>`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: ${props =>  props.color === "black" ? "white" : "black"};
+    background-color: ${props => props.color};
+    transition-delay: 1s;
     box-sizing: border-box;
     z-index: -2;
 `
