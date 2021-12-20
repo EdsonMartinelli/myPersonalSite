@@ -1,33 +1,45 @@
-import styled, { keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
-const animation = (color: string) => keyframes`
+const leftToRight = keyframes`
     from {
-       background-color: ${color}; 
-       clip-path: circle(2% at 50% 50%);
+        width: 0%;
+        right: 0;
     }
     to {
-        background-color: ${color}; 
-        clip-path: circle(100% at 50% 50%);
+        width: 100%;
+        right: 0;
     }
 `
 
-export const Layout = styled.nav<{color : string}>`
+const rightToLeft = keyframes`
+    from {
+        width: 0%;
+        left: 0;
+    }
+    to {
+        width: 100%;
+        left: 0;
+    }
+`
+
+export const Layout = styled.nav<{color: string, type: string, isPageload: boolean}>`
     position: absolute;
-    padding-top: 100px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: ${props =>  props.color};
     box-sizing: border-box;
     z-index: -1;
-    animation: ${props => animation(props.color)} 1s;
+    ${props =>  props.isPageload === false && css`
+        animation: ${props.type === "leftToRight"? leftToRight : rightToLeft} 1s ease
+    `
+    }
 `
 
 export const Background = styled.nav<{color : string}>`
     position: absolute;
-    padding-top: 100px;
     width: 100%;
-    height: 100vh;
-    background-color: ${props =>  props.color == "black" ? "white" : "black"};
+    height: 100%;
+    background-color: ${props =>  props.color === "black" ? "white" : "black"};
     box-sizing: border-box;
     z-index: -2;
 `
