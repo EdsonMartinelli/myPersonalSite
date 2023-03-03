@@ -4,7 +4,8 @@ import Skills from "@/client/components/home/skills/Skills";
 
 export default async function Home() {
   const userResponse = await fetch(
-    "https://api.github.com/users/EdsonMartinelli"
+    "https://api.github.com/users/EdsonMartinelli",
+    { next: { revalidate: 86400 } }
   );
   const userInfo = await userResponse.json();
   return (

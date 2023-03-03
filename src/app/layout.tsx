@@ -2,7 +2,7 @@ import { ThemeContextComponent } from "@/client/contexts/ThemeContext";
 import "./globals.css";
 import { Open_Sans, Roboto } from "@next/font/google";
 import { cookies } from "next/headers";
-import Navbar from "@/client/components/Navbar";
+import Navbar from "@/client/components/navbar/Navbar";
 
 const openSans = Open_Sans({
   weight: "400",

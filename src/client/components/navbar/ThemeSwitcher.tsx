@@ -1,10 +1,10 @@
 "use client";
+import { useThemeContext } from "@/client/contexts/ThemeContext";
 import * as AccessibleIcon from "@radix-ui/react-accessible-icon";
 import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
 import { Root, Item } from "@radix-ui/react-toggle-group";
-import { useThemeContext } from "../contexts/ThemeContext";
 
-export default function ToogleTheme() {
+export default function ThemeSwitcher() {
   const theme = useThemeContext();
   return (
     <Root

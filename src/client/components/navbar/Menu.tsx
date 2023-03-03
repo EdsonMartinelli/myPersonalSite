@@ -4,7 +4,7 @@ import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import NavigationLink from "./NavigationLink";
 import * as Separator from "@radix-ui/react-separator";
 import * as Dialog from "@radix-ui/react-dialog";
-import ToogleTheme from "./ToogleTheme";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Menu() {
   return (
@@ -29,7 +29,7 @@ export default function Menu() {
             className=" h-[35px] w-[1px] bg-separator dark:bg-separatorDark mr-4"
           />
           <NavigationMenu.Item>
-            <ToogleTheme />
+            <ThemeSwitcher />
           </NavigationMenu.Item>
         </NavigationMenu.List>
       </NavigationMenu.Root>
@@ -97,7 +97,7 @@ export default function Menu() {
                     >
                       Switch Theme
                     </span>
-                    <ToogleTheme />
+                    <ThemeSwitcher />
                   </NavigationMenu.Item>
                 </NavigationMenu.List>
               </NavigationMenu.Root>
