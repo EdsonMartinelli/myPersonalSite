@@ -29,6 +29,10 @@ module.exports = {
         textTitleDark: radixColor.grayDark.gray12,
 
 
+        borderTextImportant: radixColor.pinkDark.pink9,
+        borderTextImportantHover: radixColor.pinkDark.pink10,
+
+
         
       },
       backgroundImage: {

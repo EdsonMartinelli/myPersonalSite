@@ -73,7 +73,7 @@ export default function About() {
                 institution="Universidade Federal do ABC (UFABC)"
                 description="Atualmente no último ano do bacharelado feito em
                 conjunto com o Bacharelado em Ciência e Tecnologia (BC&T) oferecido
-                pela mesmo instituição."
+                pela mesma instituição."
               />
             </ul>
           </div>
