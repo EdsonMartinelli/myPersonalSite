@@ -114,7 +114,7 @@ export default function Skills() {
       <div
         className="w-full h-[128px] bg-app dark:bg-appDark border-y-[1px] 
         border-separator dark:border-separatorDark mt-8 mb-8 xl:mb-[8rem] flex 
-        flex-row items-center justify-center gap-16 dark:bg-black"
+        flex-row items-center justify-center gap-16"
       >
         <SocialIcons>
           <Image src={typescript} alt="logo" />
