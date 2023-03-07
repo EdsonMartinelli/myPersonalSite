@@ -3,16 +3,17 @@ import Hero from "@/client/components/home/hero/Hero";
 import Skills from "@/client/components/home/skills/Skills";
 
 export default async function Home() {
-  const userResponse = await fetch(
+  /* const userResponse = await fetch(
     "https://api.github.com/users/EdsonMartinelli",
     {
       next: { revalidate: 60 * 60 * 24 }, // 1 day
     }
   );
-  const userInfo = await userResponse.json();
+  const userInfo = await userResponse.json(); 
+  const avatar = userInfo.avatar_url */
   return (
     <>
-      <Hero avatar={userInfo.avatar_url} />
+      <Hero avatar={"https://avatars.githubusercontent.com/u/90146673?v=4"} />
       <About />
       <Skills />
       <div
