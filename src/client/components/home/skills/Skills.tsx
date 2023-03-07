@@ -141,5 +141,3 @@ export default function Skills() {
     </section>
   );
 }
-
-// https://dribbble.com/shots/20753864-kawsar-design
