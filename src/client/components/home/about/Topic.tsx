@@ -30,7 +30,10 @@ export default function Topic({
         <h4 className="text-md font-bold text-textTitle dark:text-textTitleDark">
           {title}
         </h4>
-        <h5 className="text-sm font-light mb-4 text-textComponent dark:text-textComponentDark">
+        <h5
+          className="text-sm font-light mb-4 text-borderTextImportant 
+        dark:text-borderTextImportantDark"
+        >
           {institution}
         </h5>
         <p className="text-textComponent dark:text-textComponentDark">

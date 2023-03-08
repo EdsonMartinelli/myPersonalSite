@@ -1,7 +1,6 @@
 import {
   GitHubLogoIcon,
   LinkedInLogoIcon,
-  EnvelopeClosedIcon,
   DiscordLogoIcon,
   ArrowDownIcon,
   DownloadIcon,
@@ -9,7 +8,6 @@ import {
 import Image from "next/image";
 import SocialIcons from "./SocialIcons";
 
-//https://api.github.com/users/EdsonMartinelli , avatar_url
 export default function Hero({ avatar }: { avatar: string }) {
   console.log(avatar);
   return (
@@ -75,18 +73,17 @@ export default function Hero({ avatar }: { avatar: string }) {
             <SocialIcons>
               <DiscordLogoIcon className="h-full w-full" />
             </SocialIcons>
-            <SocialIcons>
-              <EnvelopeClosedIcon className="h-5/6 w-5/6" />
-            </SocialIcons>
           </div>
 
           <div className="flex items-start justify-center xl:justify-end">
             <button
               className="py-2 px-4 rounded-md bg-component flex items-center justify-center
               dark:bg-componentDark text-borderTextImportant hover:text-borderTextImportantHover
+              dark:text-borderTextImportantDark dark:hover:text-borderTextImportantHoverDark
               hover:bg-componentHover dark:hover:bg-componentHoverDark
-              border-[1px] border-borderTextImportant hover:border-borderTextImportantHover text-lg
-              flex-row gap-2"
+              border-[1px] border-borderTextImportant hover:border-borderTextImportantHover 
+              dark:border-borderTextImportantDark dark:hover:border-borderTextImportantHoverDark
+              text-lg flex-row gap-2"
             >
               Baixar Currículo <DownloadIcon className="w-[28px] h-[28px]" />
             </button>
