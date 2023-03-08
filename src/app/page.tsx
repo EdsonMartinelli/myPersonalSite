@@ -18,7 +18,7 @@ export default async function Home() {
       <Skills />
       <div
         id="contato"
-        className="w-full h-screen bg-radial dark:bg-radialDark"
+        className="w-full h-screen xl:max-h-[900px] bg-radial dark:bg-radialDark"
       >
         <div className="w-full h-full bg-grid dark:bg-gridDark">
           <h1 className="text-3xl font-bold underline dark:text-white">

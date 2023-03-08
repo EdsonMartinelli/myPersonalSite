@@ -21,6 +21,9 @@ import mongodb from "@/client/assets/mongodb.svg";
 import git from "@/client/assets/git.svg";
 import haskell from "@/client/assets/haskell.svg";
 import python from "@/client/assets/python.svg";
+import sequelize from "@/client/assets/sequelize.svg";
+import prisma from "@/client/assets/prisma.svg";
+import cplusplus from "@/client/assets/cplusplus.svg";
 
 export default function Skills() {
   return (
@@ -90,23 +93,26 @@ export default function Skills() {
             </div>
           </Card>
         </div>
-        <p className="text-xl font-bold text-center mt-24 mb-8 text-textTitle dark:text-textTitleDark">
+        <p
+          className="text-2xl font-bold text-center mt-24 mb-8 text-textTitle
+         dark:text-textTitleDark"
+        >
           Outras linguagens, banco de dados, bibliotecas e frameworks que já
           utilizei em algum projeto:
         </p>
-        <div
-          className="flex flex-col lg:flex-row items-center justify-center w-full
-          gap-3 lg:gap-16"
-        >
+        <div className="flex flex-col lg:flex-row items-center justify-center w-full">
           <div
-            className="grid grid-cols-4 grid-rows-2 gap-y-3 w-fit justify-items-center
-            items-center lg:flex lg:flex-row lg:justify-center lg:gap-16 "
+            className="grid grid-cols-4 grid-rows-3 gap-y-3 w-fit justify-items-center
+            items-center lg:flex lg:flex-row lg:justify-center"
           >
             <Item>
               <Image src={tailwindcss} alt="Logotype of Tailwind CSS" />
             </Item>
             <Item>
               <Image src={c} alt="Logotype of C Language" />
+            </Item>
+            <Item>
+              <Image src={cplusplus} alt="Logotype of C++" />
             </Item>
             <Item>
               <Image src={csharp} alt="Logotype of C Sharp" />
@@ -126,18 +132,24 @@ export default function Skills() {
             <Item>
               <Image src={python} alt="Logotype of Python" />
             </Item>
-          </div>
-          <button
-            className="w-[48px] h-[48px] p-3 rounded-full bg-component inline-flex 
+            <Item>
+              <Image src={sequelize} alt="Logotype of Sequelize" />
+            </Item>
+            <Item>
+              <Image src={prisma} alt="Logotype of Prisma" />
+            </Item>
+            <button
+              className="w-[64px] h-[64px] p-[12px] rounded-full bg-component flex 
               items-center justify-center dark:bg-componentDark text-borderTextImportant
             hover:text-borderTextImportantHover hover:bg-componentHover 
             dark:hover:bg-componentHoverDark border-[1px] border-borderTextImportant
             hover:border-borderTextImportantHover dark:text-borderTextImportantDark
             dark:hover:text-borderTextImportantHoverDark dark:border-borderTextImportantDark
-            dark:hover:border-borderTextImportantHoverDark"
-          >
-            <PlusIcon className="w-full h-full" />
-          </button>
+            dark:hover:border-borderTextImportantHoverDark box-border ml-[-8px]"
+            >
+              <PlusIcon className="w-full h-full" />
+            </button>
+          </div>
         </div>
       </div>
     </section>
