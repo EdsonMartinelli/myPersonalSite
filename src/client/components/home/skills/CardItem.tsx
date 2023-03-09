@@ -15,8 +15,8 @@ export default function CardItem({ children, name, level }: CardItemProps) {
       <div className="flex flex-row items-center gap-3">
         <div
           className="w-[56px] h-[56px] p-[8px] border-[1px] border-separator
-         dark:border-separatorDark rounded-md bg-componentActive 
-         dark:bg-componentActiveDark flex items-center justify-center"
+        dark:border-separatorDark rounded-md bg-componentActive 
+        dark:bg-componentActiveDark flex items-center justify-center"
         >
           {children}
         </div>

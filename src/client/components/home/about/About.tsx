@@ -13,7 +13,7 @@ export default function About() {
       >
         <h2
           className="font-black text-2xl tracking-wide text-textTitle 
-          dark:text-textTitleDark lg:text-3xl text-center xl:text-left mb-16"
+        dark:text-textTitleDark lg:text-3xl text-center xl:text-left mb-16"
         >
           Sobre
         </h2>
@@ -47,7 +47,7 @@ export default function About() {
           <div className="flex-1">
             <h1
               className="font-black text-xl xl:text-2xl tracking-wide text-textTitle 
-              dark:text-textTitleDark text-left mb-8 xl:mb-6"
+            dark:text-textTitleDark text-left mb-8 xl:mb-6"
             >
               <Pencil2Icon
                 className="absolute w-[32px] h-[32px] -translate-x-[16px]

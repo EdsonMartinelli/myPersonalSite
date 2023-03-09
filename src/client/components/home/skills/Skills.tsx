@@ -34,13 +34,13 @@ export default function Skills() {
       <div className="w-full h-fit p-8 xl:p-[8rem] box-border">
         <h2
           className="font-black text-2xl tracking-wide text-textTitle 
-            dark:text-textTitleDark lg:text-3xl text-center xl:text-left mb-16"
+        dark:text-textTitleDark lg:text-3xl text-center xl:text-left mb-16"
         >
           Habilidades
         </h2>
         <div
           className="flex flex-col xl:flex-row items-start center gap-4 justify-between
-            h-fit box-border"
+          h-fit box-border"
         >
           <Card>
             <CardTitle>
@@ -85,10 +85,10 @@ export default function Skills() {
             </CardTitle>
             <div className="flex flex-col justify-center">
               <CardItem name="nodejs" level="avançado">
-                <Image src={nodejs} alt="logo" />
+                <Image src={nodejs} alt="Logotype of Nodejs" />
               </CardItem>
               <CardItem name="GCP" level="iniciante">
-                <Image src={gcp} alt="logo" />
+                <Image src={gcp} alt="Logotype of GCP" />
               </CardItem>
             </div>
           </Card>
@@ -97,8 +97,8 @@ export default function Skills() {
           className="text-2xl font-bold text-center mt-24 mb-8 text-textTitle
          dark:text-textTitleDark"
         >
-          Outras linguagens, banco de dados, bibliotecas e frameworks que já
-          utilizei em algum projeto:
+          Outras linguagens, banco de dados, bibliotecas, frameworks e ambientes
+          que já utilizei em algum projeto:
         </p>
         <div className="flex flex-col lg:flex-row items-center justify-center w-full">
           <div
