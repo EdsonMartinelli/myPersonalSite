@@ -9,11 +9,10 @@ import Image from "next/image";
 import SocialIcons from "./SocialIcons";
 
 export default function Hero({ avatar }: { avatar: string }) {
-  console.log(avatar);
   return (
     <div
       id="hero"
-      className="w-full max-h-[800px] h-screen bg-radial dark:bg-radialDark"
+      className="w-full max-h-[900px] h-screen bg-radial dark:bg-radialDark"
     >
       <div
         className="w-full h-full bg-grid dark:bg-gridDark overflow-hidden 

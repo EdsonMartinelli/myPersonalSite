@@ -28,9 +28,13 @@ export default function RootLayout({
         font={openSans.className}
       >
         <div
-          className={`w-full min-h-screen bg-app dark:bg-appDark 2xl:flex 2xl:justify-center`}
+          className={`w-full min-h-screen bg-app dark:bg-appDark 2xl:flex 
+          2xl:justify-center`}
         >
-          <div className="w-full max-w-screen-2xl 2xl:border-x-[1px] border-separator dark:border-separatorDark box-border overflow-hidden">
+          <div
+            className="w-full max-w-screen-2xl 2xl:border-x-[1px] border-separator
+            dark:border-separatorDark box-border"
+          >
             <Navbar />
             {children}
           </div>
