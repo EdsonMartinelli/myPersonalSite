@@ -18,8 +18,8 @@ export default function ThemeSwitcher() {
         className="w-[32px] h-[32px] flex items-center justify-center 
                 bg-component dark:bg-componentDark
                 hover:bg-componentHover dark:hover:bg-componentHoverDark
-                text-textComponent dark:text-textComponentDark
-                data-[state=on]:bg-componentActive"
+                text-app dark:text-textComponentDark
+                data-[state=on]:bg-borderTextImportant"
         disabled={theme.getTheme() == "light"}
       >
         <AccessibleIcon.Root label="Turn light mode on">
@@ -32,8 +32,8 @@ export default function ThemeSwitcher() {
         className="w-[32px] h-[32px] flex items-center justify-center 
                 bg-component dark:bg-componentDark
                 hover:bg-componentHover dark:hover:bg-componentHoverDark
-                text-textComponent dark:text-textComponentDark
-                dark:data-[state=on]:bg-componentActiveDark"
+                text-textComponent dark:text-app
+                dark:data-[state=on]:bg-borderTextImportantDark"
         disabled={theme.getTheme() == "dark"}
       >
         <AccessibleIcon.Root label="Turn dark mode on">

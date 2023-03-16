@@ -37,9 +37,9 @@ export default function Menu() {
       <Dialog.Root defaultOpen={false}>
         <Dialog.Trigger asChild>
           <button
-            className="lg:hidden w-[32px] h-[32px] flex items-center justify-center rounded-md
-            hover:bg-componentHover dark:hover:bg-componentHoverDark
-            text-textComponent dark:text-textComponentDark"
+            className="lg:hidden w-[32px] h-[32px] flex items-center justify-center
+            rounded-md hover:bg-componentHover dark:hover:bg-componentHoverDark
+            text-textComponent dark:text-textComponentDark data-[state=open]:hidden"
           >
             <HamburgerMenuIcon
               className="w-5 h-5 text-textComponent 
@@ -54,7 +54,7 @@ export default function Menu() {
             data-[state=closed]:animate-overlayClose"
           />
           <Dialog.Content
-            className="fixed top-[16px] right-[16px] rounded-md w-1/2
+            className="fixed top-[16px] right-[16px] rounded-md w-1/2 z-[5]
             min-w-[256px] max-w-[256px] bg-app dark:bg-appDark px-[16px]
             py-[15px] border-[1px] border-separator dark:border-separatorDark 
             data-[state=open]:animate-contentShow data-[state=closed]:animate-contentClose"

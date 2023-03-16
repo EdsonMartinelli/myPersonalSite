@@ -64,13 +64,22 @@ export default function Hero({ avatar }: { avatar: string }) {
           </main>
 
           <div className="flex flex-row gap-5 justify-center">
-            <SocialIcons>
+            <SocialIcons
+              href="https://github.com/EdsonMartinelli"
+              aria="External link to my github"
+            >
               <GitHubLogoIcon className="h-full w-full" />
             </SocialIcons>
-            <SocialIcons>
+            <SocialIcons
+              href="https://www.linkedin.com/in/edsonmartinelli/"
+              aria="External link to my linkedin"
+            >
               <LinkedInLogoIcon className="h-full w-full" />
             </SocialIcons>
-            <SocialIcons>
+            <SocialIcons
+              href="https://discordapp.com/users/247047516799893504"
+              aria="External link to my discord"
+            >
               <DiscordLogoIcon className="h-full w-full" />
             </SocialIcons>
           </div>
@@ -91,15 +100,16 @@ export default function Hero({ avatar }: { avatar: string }) {
         </div>
 
         <div className="w-full h-fit flex justify-center">
-          <div
+          <a
             className="animate-bounce w-[48px] h-[48px] rounded-full flex items-center
             justify-center p-3 border-[1px] bg-component text-textComponent
             border-separator dark:bg-componentDark dark:text-textComponentDark
             dark:border-separatorDark hover:bg-componentHover dark:hover:bg-componentHoverDark
             hover:animate-none"
+            href="/#about"
           >
             <ArrowDownIcon className="w-full h-full" />
-          </div>
+          </a>
         </div>
       </div>
     </div>

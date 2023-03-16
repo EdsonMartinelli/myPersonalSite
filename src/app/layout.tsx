@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   const userCookie = cookies().get("personal_site_theme");
   return (
-    <html lang="en" className="scroll-smooth ">
+    <html lang="pt-br" className="scroll-smooth ">
       <head />
       <ThemeContextComponent
         cookie={userCookie?.value}
@@ -30,7 +30,7 @@ export default function RootLayout({
         <div
           className={`w-full min-h-screen bg-app dark:bg-appDark 2xl:flex 2xl:justify-center`}
         >
-          <div className="max-w-screen-2xl 2xl:border-x-[1px] border-separator dark:border-separatorDark box-border">
+          <div className="w-full max-w-screen-2xl 2xl:border-x-[1px] border-separator dark:border-separatorDark box-border overflow-hidden">
             <Navbar />
             {children}
           </div>

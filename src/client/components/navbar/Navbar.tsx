@@ -6,7 +6,7 @@ import Menu from "./Menu";
 export default function Navbar() {
   return (
     <>
-      <nav className="sticky top-0 w-full bg-app dark:bg-appDark z-50">
+      <nav className="sticky top-0 w-full bg-app dark:bg-appDark z-[3]">
         <div className=" flex flex-row items-center w-full justify-between px-5 h-[64px]">
           <Logo />
           <Menu />

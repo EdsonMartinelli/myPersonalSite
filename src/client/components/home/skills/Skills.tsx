@@ -138,17 +138,21 @@ export default function Skills() {
             <Item>
               <Image src={prisma} alt="Logotype of Prisma" />
             </Item>
-            <button
+            <a
               className="w-[64px] h-[64px] p-[12px] rounded-full bg-component flex 
               items-center justify-center dark:bg-componentDark text-borderTextImportant
-            hover:text-borderTextImportantHover hover:bg-componentHover 
-            dark:hover:bg-componentHoverDark border-[1px] border-borderTextImportant
-            hover:border-borderTextImportantHover dark:text-borderTextImportantDark
-            dark:hover:text-borderTextImportantHoverDark dark:border-borderTextImportantDark
-            dark:hover:border-borderTextImportantHoverDark box-border ml-[-8px]"
+              hover:text-borderTextImportantHover hover:bg-componentHover 
+              dark:hover:bg-componentHoverDark border-[1px] border-borderTextImportant
+              hover:border-borderTextImportantHover dark:text-borderTextImportantDark
+              dark:hover:text-borderTextImportantHoverDark dark:border-borderTextImportantDark
+              dark:hover:border-borderTextImportantHoverDark box-border ml-[-8px]"
+              href="https://github.com/EdsonMartinelli"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="See more about my skills in my github."
             >
               <PlusIcon className="w-full h-full" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
