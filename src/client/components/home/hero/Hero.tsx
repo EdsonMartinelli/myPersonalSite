@@ -10,10 +10,7 @@ import SocialIcons from "./SocialIcons";
 
 export default function Hero({ avatar }: { avatar: string }) {
   return (
-    <div
-      id="hero"
-      className="w-full max-h-[900px] h-screen bg-radial dark:bg-radialDark"
-    >
+    <div id="hero" className="w-full h-[800px] bg-radial dark:bg-radialDark">
       <div
         className="w-full h-full bg-grid dark:bg-gridDark overflow-hidden 
         flex flex-col justify-around"
